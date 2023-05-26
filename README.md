@@ -1,4 +1,4 @@
 # R_D-test-repo
-Test repo for Java courses
+Demo repository for Java courses
 
-This project is used as playground for Java course
+This project is used as a playground to grow up knowledge of Java
