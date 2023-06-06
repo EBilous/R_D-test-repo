@@ -15,8 +15,8 @@ public class HW3_task3 {
 
         int itemsFound = 0;
         String[] words = body.replaceAll("\\p{Punct}", "").split(" ");
-        for (String i: words) {
-            if (i.equals(keyword))
+        for (String item: words) {
+            if (item.equals(keyword))
                 itemsFound++;
         }
         return itemsFound;
