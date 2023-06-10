@@ -15,9 +15,8 @@ public class HW4_conditional_operators {
     public static void isBigger() {
         Scanner scanner = new Scanner(System.in);
 
-        String inp = "y";
-        // which number is bigger
-        while (inp.equalsIgnoreCase("y")) {
+        String once_again = "y";
+        while (once_again.equalsIgnoreCase("y")) {
             System.out.println("Please enter the first number: ");
             int first_value = scanner.nextInt();
             System.out.println("Please enter the second number: ");
@@ -31,14 +30,14 @@ public class HW4_conditional_operators {
                 // which number is smaller
             System.out.println(first_value < second_value ? "First number is lower" : "Second number is lower");
             }
-            // Is the number EVEN or ODD
+                // Is the number EVEN or ODD
             System.out.println("Please enter the value to check if it is an even: ");
-            int value = scanner.nextInt();
-            System.out.println(value % 2 == 0 ? "Even" : "Odd");
+            int valueToCheck = scanner.nextInt();
+            System.out.println(valueToCheck % 2 == 0 ? "Even" : "Odd");
 
 
             System.out.println("Would you try once again Y/N ? ");
-            inp = scanner.next();
+            once_again = scanner.next();
         }
         System.out.println("See you :)");
     }
