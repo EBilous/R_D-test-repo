@@ -17,8 +17,8 @@ public class calculator {
 
         switch (action) {
             case 1 -> System.out.println(plusing(first_value,second_value));
-            case 2 -> System.out.println(minusing((first_value, second_value));
-            case 3 -> System.out.println(multiplying((first_value, second_value));
+            case 2 -> System.out.println(minusing(first_value, second_value));
+            case 3 -> System.out.println(multiplying(first_value, second_value));
             case 4 -> System.out.println(dividing(first_value, second_value));
             default -> throw new IllegalStateException("Unexpected value: " + action);
         }
