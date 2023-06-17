@@ -12,7 +12,7 @@ public class calculator {
         int first_value = scanner.nextInt();
         System.out.println("Enter 2nd value: ");
         int second_value = scanner.nextInt();
-        System.out.println("Enter 2nd value: ");
+        System.out.println("Enter operation: ");
         int action = scanner.nextInt();
 
         switch (action) {
@@ -25,19 +25,15 @@ public class calculator {
     }
 
     public static int plusing(int first_value, int second_value) {
-        int result = first_value + second_value;
-        return result;
+        return first_value + second_value;
     }
     public static int minusing(int first_value, int second_value) {
-        int result = first_value - second_value;
-        return result;
+        return first_value - second_value;
     }
     public static int multiplying(int first_value, int second_value) {
-        int result = first_value * second_value;
-        return result;
+        return first_value * second_value;
     }
     public static int dividing(int first_value, int second_value) {
-        int result = first_value / second_value;
-        return result;
+        return first_value / second_value;
     }
 }

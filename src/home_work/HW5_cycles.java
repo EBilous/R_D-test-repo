@@ -12,7 +12,7 @@ public class HW5_cycles {
     public static void main(String[] args) {
         ranger(10);
         even_numbers(100);
-        factorial(10);
+        factorial(7);
         fibonacci(100);
 
     }
