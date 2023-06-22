@@ -2,24 +2,38 @@ package src.lections;
 
 // Зреверсуйте масив без використання додаткового масиву.
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+
 public class reverseArray {
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 3, 4, 5};
+        reverse(arr, arr.length);
 
-        public static void reverse(int arr[], int len) {
-            int index, k, t;
-            for (index = 0; index < len / 2; index++) {
-                t = arr[index];
-                arr[index] = arr[len - index - 1];
-                arr[len - index - 1] = t;
-            }
+        List<Integer> objectArr = List.of(1, 2, 3, 4, 5);
+        System.out.println(reverse(objectArr));
+    }
 
-            // printing the reversed array
-            System.out.println("Reversed array: \n");
-            for (k = 0; k < len; k++) {
-                System.out.println(arr[k]);
-            }
+    public static void reverse(int[] array, int len) {
+        int index, k, t;
+        for (index = 0; index < len / 2; index++) {
+            t = array[index];
+            array[index] = array[len - index - 1];
+            array[len - index - 1] = t;
         }
-        public static void main(String[] args) {
-            int[] arr = { 1, 2, 3, 4, 5 };
-            reverse(arr, arr.length);
+
+        System.out.println("Reversed array: \n");
+        for (k = 0; k < len; k++) {
+            System.out.println(array[k]);
         }
     }
+
+    // additional variant for practice
+    public static Collection<Integer> reverse(List<Integer> array) {
+        List<Integer> newList = new ArrayList<>(array);
+        Collections.reverse(newList);
+        return newList;
+    }
+}

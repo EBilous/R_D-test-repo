@@ -17,8 +17,8 @@ public class sumOfArrayElements {
             array1[i] = randomiser.nextInt(range);
         }
         int sum = 0;
-        for (int i = 0; i < array1.length; i++) {
-            sum = sum + array1[i];
+        for (int j : array1) {
+            sum = sum + j;
         }
         System.out.println(Arrays.toString(array1));
         System.out.println(sum);
