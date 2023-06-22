@@ -5,6 +5,7 @@ package src.home_work;
     Метод повинен вивести зірочку стільки разів, скільки передав користувач у метод
 
     Метод повинен вивести переданий символ стільки разів, скільки передав користувач у метод*/
+    // New test comment
 public class HW6_reloading {
         public static void main(String[] args) {
             cube(3);
