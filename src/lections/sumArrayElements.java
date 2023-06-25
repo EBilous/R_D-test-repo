@@ -6,7 +6,7 @@ import java.util.Random;
 
 /* Завдання: Створіть масив цілих чисел та обчисліть суму всіх чисел в масиві.*/
 
-public class sumOfArrayElements {
+public class sumArrayElements {
     public static final int range = 10;
     private final static Random randomiser = new Random();
 
@@ -18,7 +18,7 @@ public class sumOfArrayElements {
         }
         int sum = 0;
         for (int j : array1) {
-            sum = sum + j;
+            sum += j;
         }
         System.out.println(Arrays.toString(array1));
         System.out.println(sum);

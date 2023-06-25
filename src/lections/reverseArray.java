@@ -30,7 +30,7 @@ public class reverseArray {
         }
     }
 
-    // additional variant for practice
+    // alternative realization
     public static Collection<Integer> reverse(List<Integer> array) {
         List<Integer> newList = new ArrayList<>(array);
         Collections.reverse(newList);
