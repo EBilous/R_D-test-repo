@@ -1,6 +1,6 @@
 package src.lections;
 
-public class typeOfMatrix {
+public class TypeOfMatrix {
     public static void main(String[] args) {
         int[][] squareMatrix = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
         int[][] rectangularMatrix = {{1, 2, 3}, {4, 5, 6}};

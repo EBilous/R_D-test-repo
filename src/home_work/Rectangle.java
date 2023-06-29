@@ -1,6 +1,6 @@
 package src.home_work;
 
-public class rectangle {
+public class Rectangle {
 
     public static void main(String[] args) {
         rectangleOfStars(10,10);

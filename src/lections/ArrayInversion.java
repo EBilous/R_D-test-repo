@@ -5,7 +5,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
-public class arrayInversion {
+public class ArrayInversion {
     public static void main(String[] args) {
         List<Integer> objectArr = List.of(1, 2, 3, 4, 5);
         System.out.println(reverse(objectArr));

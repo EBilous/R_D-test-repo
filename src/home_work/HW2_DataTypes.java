@@ -3,7 +3,7 @@ package src.home_work;
 
 import java.util.Scanner;
 
-public class HW2_data_types {
+public class HW2_DataTypes {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Please enter the first integer: ");

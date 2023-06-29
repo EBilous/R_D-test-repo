@@ -8,7 +8,7 @@ package src.home_work;
 
     // Вивести числа фібоначчі до 100 (значення самого числа не повинно перевищувати 100)
 
-public class HW5_cycles {
+public class HW5_Cycles {
     public static void main(String[] args) {
         ranger(10);
         even_numbers(100);

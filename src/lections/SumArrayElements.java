@@ -6,7 +6,7 @@ import java.util.Random;
 
 /* Завдання: Створіть масив цілих чисел та обчисліть суму всіх чисел в масиві.*/
 
-public class sumArrayElements {
+public class SumArrayElements {
     public static final int range = 10;
     private final static Random randomiser = new Random();
 

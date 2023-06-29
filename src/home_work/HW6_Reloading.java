@@ -6,7 +6,7 @@ package src.home_work;
 
     Метод повинен вивести переданий символ стільки разів, скільки передав користувач у метод*/
     // New test comment
-public class HW6_reloading {
+public class HW6_Reloading {
         public static void main(String[] args) {
             cube(3);
             cube(3, 3);

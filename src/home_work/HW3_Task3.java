@@ -6,7 +6,7 @@ package src.home_work;
     Output : 1, 2;
     в першому випадку слово your зустрічається 1 раз, в другому випадку слово test зустрічається 2 рази*/
 
-public class HW3_task3 {
+public class HW3_Task3 {
     public static int findByKeyword(String body, String keyword) {
         // check body and keyword for null and empty values
         if (body == null || keyword == null || body.isEmpty() || keyword.isEmpty()) {

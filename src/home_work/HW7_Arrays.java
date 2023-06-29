@@ -9,7 +9,7 @@ import java.util.Random;
         Знайти максимальне значення
         Знайти середнє значення
         Знайти суму всіх елементів*/
-public class HW7_arrays {
+public class HW7_Arrays {
     public static final int range = 99;
     private final static Random randomiser = new Random();
 
