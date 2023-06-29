@@ -2,7 +2,7 @@ package src.lections;
 
 import java.util.Arrays;
 
-public class minMaxValueInArray {
+public class MinMaxValueInArray {
     public static void main(String[] args) {
         int[] array1 = new int[]{1, 2, 4, 5, 6};
 

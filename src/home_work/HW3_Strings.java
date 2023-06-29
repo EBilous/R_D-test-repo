@@ -11,7 +11,7 @@ package src.home_work;
 
 import java.util.Scanner;
 
-public class HW3_strings {
+public class HW3_Strings {
 
     //task1
     public static void main(String[] args){

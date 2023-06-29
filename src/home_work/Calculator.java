@@ -2,7 +2,7 @@ package src.home_work;
 
 import java.util.Scanner;
 
-public class calculator {
+public class Calculator {
 
 
 

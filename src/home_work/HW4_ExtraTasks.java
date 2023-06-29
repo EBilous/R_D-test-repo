@@ -11,7 +11,7 @@ import java.util.Scanner;
     Дитина 0-12, підліток 13-17, дорослий 18-50, літній 51-100)
     9:42
     не забувайте ще додавати перевірки (наприклад) - якщо в ваш метод як інпут закинуть -3*/
-public class HW4_extra_tasks {
+public class HW4_ExtraTasks {
     public static void main(String[] args) {
         dayOfWeek();
         ager();

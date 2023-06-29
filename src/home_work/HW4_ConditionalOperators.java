@@ -11,7 +11,7 @@ import java.util.Scanner;
 програму для перевірка заданого числа на парність
 
 */
-public class HW4_conditional_operators {
+public class HW4_ConditionalOperators {
     public static void isBigger() {
         Scanner scanner = new Scanner(System.in);
 

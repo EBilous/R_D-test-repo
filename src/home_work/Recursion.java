@@ -1,8 +1,8 @@
 package src.home_work;
 
-public class recursion {
+public class Recursion {
     public static void main(String[] args) {
-    recursively("Eugene");
+        System.out.println(recursively("Eugene"));
     }
 
     public static StringBuilder recursively(String input) {
