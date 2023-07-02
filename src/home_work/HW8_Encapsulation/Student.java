@@ -1,4 +1,4 @@
-package src.home_work.HW8_Incapsulation;
+package src.home_work.HW8_Encapsulation;
 
 
 /*  1. Створити клас, який описує студента та клас для опису викладача

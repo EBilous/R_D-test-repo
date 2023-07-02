@@ -1,4 +1,4 @@
-package src.home_work.HW8_Incapsulation;
+package src.home_work.HW8_Encapsulation;
 
 public class Main {
         public static void main(String[] args) {
