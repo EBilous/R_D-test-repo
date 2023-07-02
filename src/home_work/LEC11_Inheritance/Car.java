@@ -1,6 +1,10 @@
 package src.home_work.LEC11_Inheritance;
 
 public class Car extends Vehicle{
+    public Car(String carType) {
+        this.carType = carType;
+    }
+
     String carType;
     String capacity;
 
