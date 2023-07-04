@@ -50,7 +50,7 @@ public class Vehicle {
     }
 
     public void setType(String type) {
-        this.yearOfMade = type;
+        this.type = type;
     }
 
 }
