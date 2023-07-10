@@ -5,7 +5,7 @@ public class Main {
         Father father = new Father();
         father.firstFather();
 
-        Child child = new Child();
+        Father child = new Child();
         child.firstFather();
         Child.childMethod();
     }
