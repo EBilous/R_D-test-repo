@@ -1,6 +1,7 @@
-package src.home_work.LEC16_collections_p1;
+package src.home_work.LEC16.collections;
 
-import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -15,9 +16,14 @@ public class Main {
         studentManager.addStudent(student3);
         studentManager.addStudent(student4);
 
-        ArrayList<Student> studentsList = studentManager.getStudents();
+        List<Student> studentsList = studentManager.getStudents();
         for (Student student : studentsList) {
             System.out.println("FirstName: " + student.getFirstname() + ", LastName: " + student.getLastName() + ", Age: " + student.getAge());
+        }
+        Iterator<Student> iter = studentsList.listIterator();
+        while (iter.hasNext()) {
+            Student lis = iter.next();
+            System.out.println(lis.getFirstname() + " " + lis.getLastName() + " " + lis.getAge());
         }
     }
 }

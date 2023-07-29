@@ -1,4 +1,4 @@
-package src.home_work.LEC16_collections_p1;
+package src.home_work.LEC16.collections;
 
 import java.util.ArrayList;
 
@@ -16,5 +16,4 @@ public class StudentManager {
     public ArrayList<Student> getStudents() {
         return students;
     }
-
 }

@@ -1,4 +1,4 @@
-package src.home_work.LEC16_collections_p1;
+package src.home_work.LEC16.collections;
 
 /*1. Створити програму для збереження списку чисел з 10 елементів та іншого з 2 000 000 елементів. Для кожного підібрати свій тип
 
@@ -11,9 +11,9 @@ package src.home_work.LEC16_collections_p1;
 
 public class Student {
 
-    String firstname;
-    String lastName;
-    Integer age;
+    private String firstname;
+    private String lastName;
+    private Integer age;
 
     public Student(String firstname, String lastName, int age) {
         this.firstname = firstname;
