@@ -38,4 +38,16 @@ public class UkrainianTranslations {
             }
         else System.out.println("Sorry. There are no translations for this word.");
         }
+
+    @Override public int hashCode() {
+        return super.hashCode()+1;
     }
+
+    @Override public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
+
+    @Override public String toString() {
+        return super.toString();
+    }
+}
