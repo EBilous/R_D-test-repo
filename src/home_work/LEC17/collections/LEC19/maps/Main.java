@@ -29,7 +29,7 @@ public class Main {
             UkrainianTranslations.getTranslation(input.nextLine().toLowerCase());
             System.out.println("Бажаєте продовжити переклад? (так/ні): ");
 
-            if (!input.nextLine().equalsIgnoreCase("так")||!input.nextLine().equalsIgnoreCase("nfr")) {
+            if (!input.nextLine().equalsIgnoreCase("так")) {
                 retry = false;
             }
         }
