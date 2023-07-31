@@ -11,6 +11,7 @@ import java.util.TreeSet;
 
 public class Main {
     public static Random random = new Random();
+
     public static void main(String[] args) {
 
         int min = 1;
@@ -19,7 +20,7 @@ public class Main {
         System.out.println(randomIntHashSet(min, max));
         System.out.println(randomIntTreeSet(min, max));
         System.out.println(randomIntLinkedHashSet(min, max));
-        }
+    }
 
 
     private static HashSet<Integer> randomIntHashSet(int min, int max) {
