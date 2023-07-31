@@ -15,24 +15,11 @@ package src.home_work.LEC17.collections.LEC19.maps;
     "вода"
     "мир"   */
 
-import java.util.Scanner;
+import static src.home_work.LEC17.collections.LEC19.maps.UkrainianTranslations.translate;
 
 public class Main {
 
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-
-        boolean retry = true;
-
-        while (retry) {
-            System.out.println("Будьласка введіть слово: ");
-            UkrainianTranslations.getTranslation(input.nextLine().toLowerCase());
-            System.out.println("Бажаєте продовжити переклад? (так/ні): ");
-
-            if (!input.nextLine().equalsIgnoreCase("так")) {
-                retry = false;
-            }
-        }
-        System.out.println("Дякуємо за візит!");
+        translate();
     }
 }

@@ -1,6 +1,7 @@
 package src.home_work.LEC17.collections.LEC19.maps;
 
 import java.util.HashMap;
+import java.util.Scanner;
 
 public class UkrainianTranslations {
     public static HashMap<String, String[]> vocabulary() {
@@ -31,16 +32,34 @@ public class UkrainianTranslations {
                 System.out.println("Japanese: " + translations[1]);
                 System.out.println("German: " + translations[2]);
                 System.out.println();
-            }
-            catch (Exception e) {
+            } catch (Exception e) {
                 System.out.println("Sorry. There are no translations for this word.");
             }
-            }
-        else System.out.println("Sorry. There are no translations for this word.");
+        } else {
+            System.out.println("Sorry. There are no translations for this word.");
         }
+    }
+
+    public static void translate() {
+
+        Scanner input = new Scanner(System.in);
+
+        boolean retry = true;
+
+        while (retry) {
+            System.out.println("Будьласка введіть слово: ");
+            UkrainianTranslations.getTranslation(input.nextLine().toLowerCase());
+            System.out.println("Бажаєте продовжити переклад? (так/ні): ");
+
+            if (!input.nextLine().equalsIgnoreCase("так")) {
+                retry = false;
+            }
+        }
+        System.out.println("Дякуємо за візит!");
+    }
 
     @Override public int hashCode() {
-        return super.hashCode()+1;
+        return super.hashCode() + 1;
     }
 
     @Override public boolean equals(Object obj) {
