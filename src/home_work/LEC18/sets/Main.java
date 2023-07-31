@@ -10,6 +10,7 @@ import java.util.Random;
 import java.util.TreeSet;
 
 public class Main {
+    public static Random random = new Random();
     public static void main(String[] args) {
 
         int min = 1;
@@ -23,8 +24,6 @@ public class Main {
 
     private static HashSet<Integer> randomIntHashSet(int min, int max) {
 
-        Random random = new Random();
-
         HashSet<Integer> newHashSet = new HashSet<>();
 
         for (int i = 0; i < 1000; i++) {
@@ -35,8 +34,6 @@ public class Main {
 
     private static TreeSet<Integer> randomIntTreeSet(int min, int max) {
 
-        Random random = new Random();
-
         TreeSet<Integer> newTreeSet = new TreeSet<>();
 
         for (int i = 0; i < 1000; i++) {
@@ -46,8 +43,6 @@ public class Main {
     }
 
     private static LinkedHashSet<Integer> randomIntLinkedHashSet(int min, int max) {
-
-        Random random = new Random();
 
         LinkedHashSet<Integer> newLinkedHashSet = new LinkedHashSet<>();
 
