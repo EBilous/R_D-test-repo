@@ -15,28 +15,18 @@ public class Main {
         studentsList.add(new Student("Jones", 76.9));
 
         System.out.println("Original List:");
-        for (Student student : studentsList) {
-            System.out.println(student);
-        }
+        studentsList.forEach(System.out::println);
 
         studentsList.sort(new LastNameComparator());
         System.out.println("\nSorted by Last Name:");
-        for (Student student : studentsList) {
-            System.out.println(student);
-        }
+        studentsList.forEach(System.out::println);
 
         studentsList.sort(new AverageGradeComparatorDescending());
         System.out.println("\nSorted by Average Grade Descending:");
-        for (Student student : studentsList) {
-            System.out.println(student);
-        }
+        studentsList.forEach(System.out::println);
 
         studentsList.sort(new AverageGradeComparatorAscending());
         System.out.println("\nSorted by Average Grade Ascending:");
-        for (Student student : studentsList) {
-            System.out.println(student);
+        studentsList.forEach(System.out::println);
         }
-
-
-    }
 }
