@@ -1,11 +1,5 @@
 package src.lections.LEC21.streams;
 
-/*
-
-
-        Задача 4: Використовуючи Stream API, вибрати всі рядки в списку, що починаються з певної букви (скажімо, "a").
-        Задача 5: Використовуючи Stream API, обчислити суму всіх чисел в списку.
-     */
 
 import java.util.Collections;
 import java.util.List;
@@ -47,6 +41,7 @@ public class Main {
 
         List<Integer> sum = Collections.singletonList(Stream.of(1, 2, 3, 4, 5, 6, 7, 8, 9)
             .toList().stream().mapToInt(Integer::intValue).sum());
+
         System.out.println(sum);
     }
 }
