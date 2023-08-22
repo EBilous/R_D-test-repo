@@ -1,4 +1,4 @@
-package src.lections;
+package src.lections.other.lections;
 
 public class Shape {
     public Shape(Integer length, Integer width) {

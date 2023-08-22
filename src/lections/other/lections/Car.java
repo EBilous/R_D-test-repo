@@ -1,4 +1,4 @@
-package src.lections;
+package src.lections.other.lections;
 
 /*практика по ініціалізації :
         Завдання 1: Клас з різними типами конструкторів та блоками ініціалізації

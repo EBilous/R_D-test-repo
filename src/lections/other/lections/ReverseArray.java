@@ -1,4 +1,4 @@
-package src.lections;
+package src.lections.other.lections;
 
 // Зреверсуйте масив без використання додаткового масиву.
 

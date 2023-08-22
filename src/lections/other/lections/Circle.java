@@ -1,4 +1,4 @@
-package src.lections;
+package src.lections.other.lections;
 
 public class Circle extends Shape{
     public Circle(Integer length, Integer width) {
