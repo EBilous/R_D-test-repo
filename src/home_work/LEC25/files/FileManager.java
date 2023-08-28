@@ -1,16 +1,20 @@
 package src.home_work.LEC25.files;
-import java.io.*;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.List;
 
 class FileManager {
-    private final String filename;
+    private final String path;
 
-    public FileManager(String filename) {
-        this.filename = filename;
+    public FileManager(String path) {
+        this.path = path;
     }
 
     public void saveDataToFile(String content) {
-        try (FileWriter writer = new FileWriter(filename)) {
-            writer.write(content);
+        try {
+            Files.writeString(Path.of(path), content);
             System.out.println("String saved successfully.");
         } catch (IOException e) {
             System.err.println("An error occurred while saving: " + e.getMessage());
@@ -18,15 +22,13 @@ class FileManager {
     }
 
     public String readDataFromFile() {
-        StringBuilder content = new StringBuilder();
-        try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
-            String line;
-            while ((line = reader.readLine()) != null) {
-                content.append(line).append("\n");
-            }
+        List<String> content = null;
+        try {
+            content = Files.readAllLines(Path.of(path));
         } catch (IOException e) {
             System.err.println("An error occurred while reading file: " + e.getMessage());
         }
+        assert content != null;
         return content.toString();
     }
 }
