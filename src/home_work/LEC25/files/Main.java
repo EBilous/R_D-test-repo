@@ -8,7 +8,7 @@ public class Main {
         FileManager fileManager = new FileManager("src/home_work/LEC25/files/MyFiles/data.txt");
 
         // Write
-        String dataToSave = "Save me in the file.";
+        String dataToSave = "Save me in the file. I'm also there.";
         fileManager.saveDataToFile(dataToSave);
 
         // Read
