@@ -1,5 +1,9 @@
 package src.home_work.LEC25.files;
+
+import java.io.IOException;
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
 
 class FileManager {
     private final String filename;
@@ -9,7 +13,7 @@ class FileManager {
     }
 
     public void saveDataToFile(String content) {
-        try (FileWriter writer = new FileWriter(filename)) {
+        try (BufferedWriter writer = Files.newBufferedWriter(Path.of(filename))) {
             writer.write(content);
             System.out.println("String saved successfully.");
         } catch (IOException e) {
@@ -19,7 +23,7 @@ class FileManager {
 
     public String readDataFromFile() {
         StringBuilder content = new StringBuilder();
-        try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
+        try (BufferedReader reader = Files.newBufferedReader(Path.of(filename))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 content.append(line).append("\n");
