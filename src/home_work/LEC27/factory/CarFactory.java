@@ -1,4 +1,4 @@
-package src.home_work.LEC27.patterns;
+package src.home_work.LEC27.factory;
 
 class CarFactory implements VehicleFactory {
     public Vehicle createVehicle() {
